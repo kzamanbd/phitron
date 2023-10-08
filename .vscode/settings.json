@@ -4,5 +4,10 @@
         "javascript": false,
         "c": false,
         "cpp": false
+    },
+    "files.associations": {
+        "*.ejs": "html",
+        "functional": "c",
+        "cmath": "c"
     }
 }
