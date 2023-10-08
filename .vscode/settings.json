@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "afterDelay",
+    "github.copilot.enable": {
+        "javascript": false,
+        "c": false,
+        "cpp": false
+    }
+}

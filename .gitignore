@@ -1,0 +1,5 @@
+!.gitignore
+node_modules
+input.txt
+output.txt
+*.exe
