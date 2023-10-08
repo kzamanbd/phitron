@@ -1,3 +1,3 @@
-# phitron
+# Phitron
 
 Problem Solving
