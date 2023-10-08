@@ -2,12 +2,12 @@
 #define PI 3.141592653
 
 int main(){
+
+    float a, result = 0.0;
     
-    double a, result = 0.0;
-    
-    scanf("%lf", &a);
+    scanf("%f", &a);
     result = PI * a * a;
-    printf("%.9lf", result);
+    printf("%.9f", result);
     
     return 0;
 }
