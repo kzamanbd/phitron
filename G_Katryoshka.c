@@ -5,39 +5,18 @@
 
 #include <stdio.h>
 
-long long int min(long long int a, long long int b, long long int c)
-{
-    long long int min;
-    if (a < b && a < c)
-    {
-        min = a;
-    }
-    else
-    {
-        if (b < c)
-        {
-            min = b;
-        }
-        else
-        {
-            min = c;
-        }
-    }
-
-    return min;
-}
-
 int main()
 {
-    long long int eyes, mouths, bodies, minNum, count = 0;
+    long long int eyes, mouths, bodies, min, count = 0;
     scanf("%lld %lld %lld", &eyes, &mouths, &bodies);
 
-    minNum = min(eyes, mouths, bodies);
-
-    eyes = eyes - minNum;
-    mouths = mouths - minNum;
-    bodies = bodies - minNum;
-    count = minNum;
+    // minimum number
+    min = eyes < mouths && eyes < bodies ? eyes : mouths < bodies ? mouths
+                                                                  : bodies;
+    eyes = eyes - min;
+    mouths = mouths - min;
+    bodies = bodies - min;
+    count = min;
 
     long long int halfEyes = eyes / 2;
 
@@ -45,7 +24,6 @@ int main()
     {
         count += halfEyes;
     }
-
     else if (halfEyes > bodies)
     {
         count += bodies;

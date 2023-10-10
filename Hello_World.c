@@ -3,12 +3,7 @@
 int main()
 {
 
-    for (int i = 0; i <= 10; i++)
-    {
-        if (i % 2 == 0)
-        {
-            printf("%d ", i);
-        }
-    }
+    int arrayName[] = {1, 2, 3};
+    printf("%d", arrayName[3]);
     return 0;
 }
