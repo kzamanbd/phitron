@@ -5,42 +5,51 @@
 
 #include <stdio.h>
 
-int main()
+long long int min(long long int a, long long int b, long long int c)
 {
-    long long int m, n, k, min, count = 0;
-    scanf("%lld %lld %lld", &m, &n, &k);
-
-    if (m < n && m < k)
+    long long int min;
+    if (a < b && a < c)
     {
-        min = m;
+        min = a;
     }
     else
     {
-        if (n < k)
+        if (b < c)
         {
-            min = n;
+            min = b;
         }
         else
         {
-            min = k;
+            min = c;
         }
     }
 
-    m = m - min;
-    n = n - min;
-    k = k - min;
-    count = min;
+    return min;
+}
 
-    while (k != 0 && m > 1)
+int main()
+{
+    long long int eyes, mouths, bodies, minNum, count = 0;
+    scanf("%lld %lld %lld", &eyes, &mouths, &bodies);
+
+    minNum = min(eyes, mouths, bodies);
+
+    eyes = eyes - minNum;
+    mouths = mouths - minNum;
+    bodies = bodies - minNum;
+    count = minNum;
+
+    long long int halfEyes = eyes / 2;
+
+    if (halfEyes < bodies)
     {
-        count++;
-        m = m - 2;
-        --k;
+        count += halfEyes;
     }
 
-    // printf("%lld\n", m / 2);
-
-    // printf("%lld, %lld, %lld\n", m, n, k);
+    else if (halfEyes > bodies)
+    {
+        count += bodies;
+    }
 
     printf("%lld", count);
 
