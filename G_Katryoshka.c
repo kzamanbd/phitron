@@ -7,7 +7,7 @@
 
 int main()
 {
-    long long int eyes, mouths, bodies, min, count = 0;
+    long long int eyes, mouths, bodies, min, halfEyes, count = 0;
     scanf("%lld %lld %lld", &eyes, &mouths, &bodies);
 
     // minimum number
@@ -18,7 +18,7 @@ int main()
     bodies = bodies - min;
     count = min;
 
-    long long int halfEyes = eyes / 2;
+    halfEyes = eyes / 2;
 
     if (halfEyes < bodies)
     {

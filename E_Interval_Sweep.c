@@ -8,7 +8,9 @@ int main()
     int a, b;
     scanf("%d %d", &a, &b);
 
-    if (a <= b && (a != 0 && b != 0))
+    int firstNum = a % 2 == 0;
+
+    if (a <= b && (a != 0 && b != 0) || firstNum)
     {
         printf("YES");
     }
