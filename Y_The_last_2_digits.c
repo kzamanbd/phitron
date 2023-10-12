@@ -3,13 +3,11 @@
 int main()
 {
 
-    int a, b, c, d;
-    long long int result;
-    scanf("%d %d %d %d", &a, &b, &c, &d);
+    long long a, b, c, d, result;
+    scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
 
-    result = a * b * c * d;
-    long long int lastTwo = result % 100;
-    printf("%lld", lastTwo);
+    result = (a * b * c * d) % 100;
+    printf("%lld", result);
 
     return 0;
 }

@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-unsigned int factorial(unsigned int n)
+unsigned long long factorial(unsigned long long x)
 {
-    if (n == 1 || n == 0)
+    if (x == 1 || x == 0)
     {
         return 1;
     }
-    return n * factorial(n - 1);
+    return x * factorial(x - 1);
 }
 
 int main()
@@ -16,11 +16,13 @@ int main()
     scanf("%d\n", &n);
     for (int i = 0; i < n; i++)
     {
-        int x, f = 1;
+        int x;
         scanf("%d\n", &x);
 
+        long long int f = 1;
+
         f = factorial(x);
-        printf("%d\n", f);
+        printf("%lld\n", f);
     }
     return 0;
 }
