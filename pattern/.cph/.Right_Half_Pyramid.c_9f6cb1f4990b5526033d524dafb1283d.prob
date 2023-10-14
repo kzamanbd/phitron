@@ -1,0 +1,1 @@
+{"name":"Local: Right_Half_Pyramid","url":"d:\\Application\\phitron\\pattern\\Right_Half_Pyramid.c","tests":[{"id":1697276889177,"input":"5","output":"*\n* *\n* * *\n* * * *\n* * * * *"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Application\\phitron\\pattern\\Right_Half_Pyramid.c","group":"local","local":true}
