@@ -4,19 +4,17 @@
 int main()
 {
 
-    long long a, b, c, d, result;
-    scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
+    int a, b, c, d, result = 0;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
 
-    result = (a * b * c * d);
-
-    if (isinf(result))
+    result = (a % 100) * (b % 100) * (c % 100) * (d % 100);
+    if (result % 100 <= 9)
     {
-        printf("00");
+        printf("0%d", result % 100);
     }
     else
     {
-
-        printf("%lld", result % 100);
+        printf("%d", result % 100);
     }
 
     return 0;

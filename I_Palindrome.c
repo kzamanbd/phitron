@@ -1,27 +1,36 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
 
-    int n, reverse = 0, reminder;
-    scanf("%d", &n);
+    char str[1000];
+    scanf("%s", &str);
 
-    int copyNum = n;
-    while (copyNum != 0)
+    int length = strlen(str);
+
+    int i = 0;
+    int j = length - 1;
+    int isPalindrome = 1;
+
+    while (i < j)
     {
-        reminder = copyNum % 10;
-        reverse = reverse * 10 + reminder;
-        copyNum /= 10;
-        // printf("%d %d %d\n", reminder, reverse, copyNum);
+        if (str[i] != str[j])
+        {
+            isPalindrome = 0;
+        }
+
+        i++;
+        j--;
     }
 
-    if (n == reverse)
+    if (isPalindrome == 1)
     {
-        printf("%d\nYES", reverse);
+        printf("YES");
     }
     else
     {
-        printf("%d\nNO", reverse);
+        printf("NO");
     }
 
     return 0;
