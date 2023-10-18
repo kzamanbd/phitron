@@ -4,7 +4,7 @@
 int main()
 {
 
-    char a[10], b[10];
+    char a[12], b[12];
     scanf("%s\n%s", &a, &b);
 
     int length1 = strlen(a);
