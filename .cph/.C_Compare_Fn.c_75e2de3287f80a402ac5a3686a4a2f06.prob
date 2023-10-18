@@ -1,0 +1,1 @@
+{"name":"Local: C_Compare_Fn","url":"d:\\Application\\phitron\\C_Compare_Fn.c","tests":[{"id":1697606395279,"input":"acm\nacpc","output":"acm"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Application\\phitron\\C_Compare_Fn.c","group":"local","local":true}
