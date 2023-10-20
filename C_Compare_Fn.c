@@ -8,6 +8,7 @@ int main()
     scanf("%s\n%s", &x, &y);
 
     int comp = strcmp(x, y);
+    // printf("%d", comp);
 
     if (comp > 0)
     {
