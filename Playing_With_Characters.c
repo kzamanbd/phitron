@@ -6,11 +6,9 @@
 int main()
 {
 
-    char ch1, ch2[10], *ch3;
-    scanf("%s", &ch1);
-    scanf("%s", ch2);
+    char ch1, ch2[100], ch3[100];
+    scanf("%c\n%s\n", &ch1, ch2);
     fgets(ch3, 100, stdin);
-    printf("%c\n%s\n", ch1, ch2);
-    printf("%s", ch3);
+    printf("%c\n%s\n%s", ch1, ch2, ch3);
     return 0;
 }
