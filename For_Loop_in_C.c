@@ -7,13 +7,19 @@ int main()
 {
     int a, b;
     scanf("%d\n%d", &a, &b);
-    // Complete the code.
 
-    char string[9][5] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    char *str[] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
-    for (int i = a; i < 9; i++)
+    for (int i = a; i <= b; i++)
     {
-        printf("%s\n", string[i - 1]);
+        if (i <= 9)
+        {
+            printf("%s\n", str[i - 1]);
+        }
+        if (i > 9)
+        {
+            (i % 2 == 0) ? printf("even\n") : printf("odd\n");
+        }
     }
 
     return 0;
