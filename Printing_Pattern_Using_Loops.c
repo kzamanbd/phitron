@@ -11,20 +11,19 @@ int main()
 
     int rows = n * 2 - 1;
 
-    for (int i = rows - 1; i >= 0; i--)
+    for (int i = 0; i < rows; i++)
     {
-
-        for (int j = 1; j <= rows; j++)
+        for (int j = 0; j < rows; j++)
         {
-            int value = n;
+            int value = i < j ? i : j;
+            value = value < rows - i - 1 ? value : rows - i - 1;
+            value = value < rows - j - 1 ? value : rows - j - 1;
 
-            if (j != rows)
+            printf("%d", n - value);
+
+            if (j < rows - 1)
             {
-                printf("%d ", value);
-            }
-            else
-            {
-                printf("%d", value);
+                printf(" ");
             }
         }
 
