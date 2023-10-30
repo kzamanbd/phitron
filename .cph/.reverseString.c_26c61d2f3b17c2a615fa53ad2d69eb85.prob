@@ -1,0 +1,1 @@
+{"name":"Local: reverseString","url":"d:\\Application\\phitron\\reverseString.c","tests":[{"id":1698433848964,"input":"hello","output":"olleh"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Application\\phitron\\reverseString.c","group":"local","local":true}

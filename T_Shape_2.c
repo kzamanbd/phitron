@@ -3,23 +3,26 @@
 int main()
 {
 
-    int n, m;
+    int n, s;
     scanf("%d", &n);
-    m = n;
+    s = n - 1;
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 1; j <= m - 1; j++)
+        for (int j = 0; j < s; j++)
         {
             printf(" ");
         }
-        for (int k = 1; k <= 2 * i - 1; k++)
+
+        for (int j = 0; j <= i * 2; j++)
         {
             printf("*");
         }
-        m--;
+
+        s--;
 
         printf("\n");
     }
+
     return 0;
 }
