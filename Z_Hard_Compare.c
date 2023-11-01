@@ -4,14 +4,15 @@
 int main()
 {
 
-    int a, c;
-    long long int b, d, m, n;
-    scanf("%d %lld %d %lld", &a, &b, &c, &d);
+    double a, c, b, d;
+    scanf("%lf %lf %lf %lf", &a, &b, &c, &d);
 
-    m = pow(a, b);
-    n = pow(c, d);
+    b = b / 1e12;
+    d = d / 1e12;
 
-    if (m > n && m != n)
+    printf("%lf %lf\n", pow(a, b), pow(c, d));
+
+    if (pow(a, b) > pow(c, d))
     {
         printf("YES");
     }

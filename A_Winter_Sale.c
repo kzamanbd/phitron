@@ -3,11 +3,8 @@
 int main()
 {
 
-    int a, b;
-    scanf("%d %d", &a, &b);
-
-    // printf("%f", ((100 - a) * 1.0) / 100);
-
-    printf("%0.2f", b / (((100 - a) * 1.0) / 100));
+    int discount = 25, price = 150;
+    scanf("%d %d", &discount, &price);
+    printf("%0.2f", price / (((100 - discount) * 1.0) / 100));
     return 0;
 }
