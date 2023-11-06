@@ -45,7 +45,7 @@ int main()
     }
     if (rows != cols)
     {
-        flag = 1;
+        flag = 0;
     }
     if (flag == 1)
     {
