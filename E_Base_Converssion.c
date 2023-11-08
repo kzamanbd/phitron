@@ -7,30 +7,21 @@ void recursion(int n)
     {
         return;
     }
-    int x = n % 10;
-
-    recursion(n / 10);
+    int x = n % 2;
+    recursion(n / 2);
     printf("%d", x);
-    if (n > 0)
-    {
-        printf(" ");
-    }
 }
 
 int main()
 {
+    int t;
+    scanf("%d", &t);
 
-    int n;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < t; i++)
     {
         int x;
         scanf("%d", &x);
         recursion(x);
-        if (x == 0)
-        {
-            printf("0");
-        }
         printf("\n");
     }
     return 0;
