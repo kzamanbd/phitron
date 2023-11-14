@@ -3,13 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int isPrime(int x)
+void prime_number(int x)
 {
 
     int flag = 0;
     if (x == 0 || x == 1)
     {
-        flag = 0;
+        flag = 1;
     }
 
     for (int i = 2; i <= x / 2; i++)
@@ -21,7 +21,15 @@ int isPrime(int x)
         }
     }
 
-    return flag;
+    if (flag == 1)
+    {
+        printf("NO");
+    }
+    else
+    {
+        printf("YES");
+    }
+    printf("\n");
 }
 
 int main()
@@ -32,17 +40,7 @@ int main()
     {
         int x;
         scanf("%d", &x);
-
-        int flag = isPrime(x);
-        if (flag == 1)
-        {
-            printf("NO");
-        }
-        else
-        {
-            printf("YES");
-        }
-        printf("\n");
+        prime_number(x);
     }
     return 0;
 }
